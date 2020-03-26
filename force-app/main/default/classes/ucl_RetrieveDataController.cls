@@ -1,5 +1,4 @@
-public with sharing class UCLawyersController {
-
+public with sharing class ucl_RetrieveDataController {
     @AuraEnabled
     public static void retrieveData(){
         

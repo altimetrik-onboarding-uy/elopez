@@ -1,7 +1,7 @@
 import { LightningElement } from "lwc";
 import { ShowToastEvent } from "lightning/platformShowToastEvent";
 
-import retrieveData from "@salesforce/apex/UCLawyersController.retrieveData";
+import retrieveData from "@salesforce/apex/ucl_RetrieveDataController.retrieveData";
 
 export default class RetrieveData extends LightningElement {
     handleRetrieveData() {
