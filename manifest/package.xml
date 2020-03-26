@@ -32,5 +32,15 @@
         <members>*</members>
         <name>StaticResource</name>
     </types>
+    <types>
+        <members>Legal_Advisor__c</members>
+        <members>Client__c</members>
+        <members>Exception_Logger__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Client__c</members>
+        <name>Workflow</name>
+    </types>
     <version>48.0</version>
 </Package>
