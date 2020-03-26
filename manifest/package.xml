@@ -25,6 +25,10 @@
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
+        <members>UC_Lawyers</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
         <members>*</members>
         <name>LightningComponentBundle</name>
     </types>
