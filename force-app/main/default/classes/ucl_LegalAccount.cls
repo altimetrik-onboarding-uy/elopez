@@ -5,10 +5,6 @@ public with sharing class ucl_LegalAccount {
     public String asOfDate;
     public List<Client> clients;
 
-    public ucl_LegalAccount() {
-
-    }
-
     public class Client {
         public String firstName;
         public String lastName;

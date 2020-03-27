@@ -124,8 +124,12 @@ public with sharing class ucl_DataHandler {
     }
 
     private static Boolean advisorShouldBeUpserted(ucl_LegalAccount newAdvisor, Legal_Advisor__c advisor) {
-        return newAdvisor.AccountStatus == Constants.LEGAL_ADVISORS.STATUS_ENABLED ||
-            advisor.Status__c == Constants.LEGAL_ADVISORS.STATUS_ENABLED;
+        if (advisor != null) {
+            return advisor.Status__c == Constants.LEGAL_ADVISORS.STATUS_ENABLED ||
+                newAdvisor.AccountStatus == Constants.LEGAL_ADVISORS.STATUS_ENABLED;
+        }
+
+        return newAdvisor.AccountStatus == Constants.LEGAL_ADVISORS.STATUS_ENABLED;
     }
 
     private static Map<String, ucl_LegalAccount> getNewAdvisorsByNumber(List<ucl_LegalAccount> newAdvisors) {
