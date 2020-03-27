@@ -1,6 +1,6 @@
 public with sharing class ucl_AWSHandler {
 
-    @future
+    @future(callout=true)
     public static void handleRetrieveData() {
         try {
             HttpResponse response = ucl_AWSHelper.makeRequest(Constants.AWS.UCL_BUCKET_ENDPOINT);

@@ -5,21 +5,21 @@ import retrieveData from "@salesforce/apex/ucl_RetrieveDataController.retrieveDa
 
 export default class RetrieveData extends LightningElement {
     handleRetrieveData() {
-        this.showToast();
+        this.showToast("Retrieving data...", "This might take a while", "success");
         retrieveData()
             .then(() => {
-                console.log("finished");
+                this.showToast("Finished", "Data was retrieved successfully");
             })
-            .catch(error => {
-                console.log(error);
+            .catch(() => {
+                this.showToast("Finished", "Something went wrong", "error");
             });
     }
 
-    showToast() {
+    showToast(title, message, variant = "success") {
         const event = new ShowToastEvent({
-            title: "Retrieving data...",
-            message: "This might take a while",
-            variant: "success"
+            title,
+            message,
+            variant
         });
         this.dispatchEvent(event);
     }
