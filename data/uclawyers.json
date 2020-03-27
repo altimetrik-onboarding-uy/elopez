@@ -1,0 +1,78 @@
+[
+    {
+        "LegalAccounts": [
+            {
+                "AccountNumber": "9afccdd3-e7c4-4789-a465-1734886633d2",
+                "AccountName": "Centidel",
+                "AccountStatus": "Enabled",
+                "AsOfDate": "2/13/2019",
+                "Clients": [
+                    {
+                        "FirstName": "Foster",
+                        "LastName": "Burn",
+                        "Email": "fburn0@nydailynews.com",
+                        "Phone": "425-154-5410",
+                        "Address": "49018 Bashford Road",
+                        "ClientNumber": "b4110a35-7ca3-4a53-8d94-ea78c5489052"
+                    },
+                    {
+                        "FirstName": "Minetta",
+                        "LastName": "Pol",
+                        "Email": "mpol1@thetimes.co.uk",
+                        "Phone": "704-528-1659",
+                        "Address": "21 Lukken Drive",
+                        "ClientNumber": "c0c93578-6bbf-4bcc-a786-4d1e45ea0c96"
+                    }
+                ]
+            },
+            {
+                "AccountNumber": "9asdf8-e7c4-4789-a465-1734886633d2",
+                "AccountName": "Tukin",
+                "AccountStatus": "Enabled",
+                "AsOfDate": "2/13/2019",
+                "Clients": [
+                    {
+                        "FirstName": "Mister",
+                        "LastName": "Burn",
+                        "Email": "fburn0@nydailynews.com",
+                        "Phone": "425-154-5410",
+                        "Address": "49018 Bashford Road",
+                        "ClientNumber": "b4110a35-7ca3-4a53-8d94-ea78c5489052"
+                    },
+                    {
+                        "FirstName": "Lorem",
+                        "LastName": "Pol",
+                        "Email": "mpol1@thetimes.co.uk",
+                        "Phone": "704-528-1659",
+                        "Address": "21 Lukken Drive",
+                        "ClientNumber": "adsf87-6bbf-4bcc-a786-4d1e45ea0c96"
+                    }
+                ]
+            },
+            {
+                "AccountNumber": "768asdas-e7c4-4789-a465-1734886633d2",
+                "AccountName": "Ipsum",
+                "AccountStatus": "Disabled",
+                "AsOfDate": "2/13/2019",
+                "Clients": [
+                    {
+                        "FirstName": "Altrum",
+                        "LastName": "Burn",
+                        "Email": "fburn0@nydailynews.com",
+                        "Phone": "425-154-5410",
+                        "Address": "49018 Bashford Road",
+                        "ClientNumber": "987asdf-7ca3-4a53-8d94-ea78c5489052"
+                    },
+                    {
+                        "FirstName": "Lordes",
+                        "LastName": "Pol",
+                        "Email": "mpol1@thetimes.co.uk",
+                        "Phone": "704-528-1659",
+                        "Address": "21 Lukken Drive",
+                        "ClientNumber": "9asdf76t-6bbf-4bcc-a786-4d1e45ea0c96"
+                    }
+                ]
+            }
+        ]
+    }
+]
