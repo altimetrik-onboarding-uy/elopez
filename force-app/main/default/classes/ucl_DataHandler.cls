@@ -17,6 +17,11 @@ public with sharing class ucl_DataHandler {
         for (Legal_Advisor__c advisor : currentAdvisors) {
             if (!newAdvisorsByNumber.containsKey(advisor.Number__c)) {
                 advisorsToDelete.add(advisor);
+            } else if (
+                newAdvisorsByNumber.get(advisor.Number__c).accountStatus == Constants.LEGAL_ADVISORS.STATUS_DISABLED &&
+                advisor.Status__c == Constants.LEGAL_ADVISORS.STATUS_DISABLED
+            ) {
+                advisorsToDelete.add(advisor);
             }
         }
 
@@ -144,7 +149,7 @@ public with sharing class ucl_DataHandler {
     }
 
     private static List<Legal_Advisor__c> getAllLegalAdvisors() {
-        return [SELECT Id, Number__c FROM Legal_Advisor__c];
+        return [SELECT Id, Number__c, Status__c FROM Legal_Advisor__c];
     }
 
     private static List<Client__c> getAllClients() {
